@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 55px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+body {
+    width: 100%;
+}
+
+/* navbar */
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: sticky;
+    top: 0px;
+    color: white;
+    background: black;
+}
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+}
+
+nav .menu{
+    margin-right: 40px;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+    background: black;
+    margin: 0 5x;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover{
+    border-radius: 5px;
+    color: cyan;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li a{
+    line-height: 50px;
+}
+
+nav ul ul li{
+     position: relative;
+     margin: 0px;
+     width: 150px;
+     float: none;
+     display: list-item;
+     border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+/* header */
+.content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    /* top: 50%;  */
+    text-align: left;
+    color: #fff;
+    background-image: url("/images/background.jpg");
+}
+
+.content .headline{
+    font-size: 80px;
+    padding-top: 100px;
+}
+
+.content .headline h1 {
+    margin-left: 20px;
+    color: white;
+}
+
+.content h1 {
+    margin-left: 20px;
+    color: rgb(187, 187, 187);
+}
+
+.content p{
+    color: cyan;
+    margin-left: 20px;
+    /* margin: auto; */
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/* products */
+.prod-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#products {
+    text-align: center;
+}
+
+#products h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#products .more-btn button{
+    padding: 10px;
+    margin: 15px 0px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s ease-out;
+}
+
+#products .more-btn button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+/* card design */
+.card {
+    /* position: relative; */
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 23%;
+    margin: 15px 0;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    width: 23.01%;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.144);
+}
+
+.card .image img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.card .title {
+    padding: 0px 10px;
+}
+
+.card .title h2 {
+    font-size: 25px;
+}
+
+.card .des {
+    margin: 10px;
+}
+
+.card .des button {
+    padding: 10px;
+    margin: 15px 0px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+
+.card .des button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.card .title, .des {
+    text-align: center;
+}
+
+/* contact form */
+
+#contact {
+    text-align: center;
+}
+
+#contact h1 {
+    margin-bottom: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form textarea {
+    margin-bottom: 2%;
+    height: 150px;
+    padding-top: 10px;
+    resize: none;
+} 
+
+.contact-input {
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+#contact button {
+    padding: 10px 20px;
+    margin: 15px 0px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s ease-out;
+}
+
+#contact button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+/* footer section */
+#footer {
+    padding: 40px;
+    background-color: black;
+}
+
+#footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(233, 233, 233);
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+#footer .socials {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+#footer .socials a {
+    font-size: 24px;
+    color: white;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+#footer ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+}
