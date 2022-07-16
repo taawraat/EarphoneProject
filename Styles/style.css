@@ -142,7 +142,7 @@ nav ul ul ul li{
     /* top: 50%;  */
     text-align: left;
     color: #fff;
-    background-image: url("/images/background.jpg");
+    background-image: url("./images/background.jpg");
 }
 
 .content .headline{
